@@ -3,12 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NovaTech - Tecnología de Vanguardia</title>
-    <link rel="stylesheet" href="./css/main.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    <title>NovaTech - Tienda de Tecnología | Laptops, PCs y Accesorios</title>
+    <meta
+      name="description"
+      content="NovaTech - Tienda de tecnología con los mejores productos electrónicos a precios competitivos. Laptops, PCs, monitores y accesorios."
     />
+    <meta
+      name="keywords"
+      content="tecnología, laptops, computadoras, accesorios, NovaTech, tienda electrónica, comprar tecnología"
+    />
+    <meta name="author" content="NovaTech" />
+    <meta property="og:title" content="NovaTech - Tecnología de Vanguardia" />
+    <meta
+      property="og:description"
+      content="Descubre los mejores productos electrónicos al mejor precio"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.novatech.com" />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1518770660439-4636190af475"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/font/bootstrap-icons.css" />
   </head>
   <body>
     <header class="full-screen-header">
@@ -42,15 +59,17 @@
         <div class="logo">
           <h1>NovaTech</h1>
         </div>
-        <button class="menu-toggle" aria-label="Menú">
-          <i class="fas fa-bars"></i>
-        </button>
-        <ul class="nav-links">
-          <li><a href="#productos">Productos</a></li>
-          <li><a href="#categorias">Categorías</a></li>
-          <li><a href="#nosotros">Nosotros</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
+        <div class="nav-icons">
+          <a
+            href="#"
+            class="cart-icon"
+            id="cart-button"
+            aria-label="Carrito de compras"
+          >
+            <i class="bi bi-cart3"></i>
+            <span class="cart-count" id="cart-count">0</span>
+          </a>
+        </div>
       </nav>
       <div class="header-content">
         <h1 class="header-title">Tecnología para el futuro</h1>
@@ -68,7 +87,7 @@
           <div class="product-card">
             <img
               src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
-              alt="Laptop Gamer"
+              alt="Laptop Gamer Nova X9 con teclado RGB"
               loading="lazy"
             />
             <h3>Laptop Gamer Nova X9</h3>
@@ -78,7 +97,7 @@
           <div class="product-card">
             <img
               src="https://images.unsplash.com/photo-1551645120-d70bfe84c826?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
-              alt="PC de Escritorio"
+              alt="PC Workstation Pro con monitor de alta resolución"
               loading="lazy"
             />
             <h3>PC Workstation Pro</h3>
@@ -88,7 +107,7 @@
           <div class="product-card">
             <img
               src="https://images.unsplash.com/photo-1546538915-a9e2c8d0a8e6?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
-              alt="Monitor 4K"
+              alt="Monitor Ultra HD 32 pulgadas con tecnología 4K"
               loading="lazy"
             />
             <h3>Monitor Ultra HD 32"</h3>
@@ -98,7 +117,7 @@
           <div class="product-card">
             <img
               src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
-              alt="Teclado Mecánico"
+              alt="Teclado Mecánico RGB con retroiluminación personalizable"
               loading="lazy"
             />
             <h3>Teclado Mecánico RGB</h3>
@@ -162,14 +181,14 @@
         <h2>¿Por qué elegir NovaTech?</h2>
         <div class="reasons-grid">
           <div class="reason">
-            <i class="fas fa-check-circle"></i>
+            <i class="bi bi-check-circle-fill"></i>
             <h3>Calidad Garantizada</h3>
             <p>
               Todos nuestros productos pasan por rigurosos controles de calidad.
             </p>
           </div>
           <div class="reason">
-            <i class="fas fa-dollar-sign"></i>
+            <i class="bi bi-currency-dollar"></i>
             <h3>Precios Competitivos</h3>
             <p>
               Ofrecemos los mejores precios del mercado con financiamiento
@@ -177,7 +196,7 @@
             </p>
           </div>
           <div class="reason">
-            <i class="fas fa-cogs"></i>
+            <i class="bi bi-gear-fill"></i>
             <h3>Expertos en Tecnología</h3>
             <p>
               Nuestro equipo te asesorará para encontrar el producto perfecto
@@ -185,7 +204,7 @@
             </p>
           </div>
           <div class="reason">
-            <i class="fas fa-undo"></i>
+            <i class="bi bi-arrow-repeat"></i>
             <h3>Devoluciones Fáciles</h3>
             <p>
               Política de devolución sin complicaciones dentro de los 30 días.
@@ -200,7 +219,7 @@
           <div class="promo-slide active">
             <img
               src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
-              alt="Oferta Especial 1"
+              alt="Laptop Ultra Slim con descuento del 20%"
               loading="lazy"
             />
             <div class="promo-info">
@@ -213,7 +232,7 @@
           <div class="promo-slide">
             <img
               src="https://images.unsplash.com/photo-1546538915-a9e2c8d0a8e6?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
-              alt="Oferta Especial 2"
+              alt="Monitor Curvo 27 pulgadas con 25% de descuento"
               loading="lazy"
             />
             <div class="promo-info">
@@ -226,7 +245,7 @@
           <div class="promo-slide">
             <img
               src="https://images.unsplash.com/photo-1587202372775-e229f1723a1e?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
-              alt="Oferta Especial 3"
+              alt="Combo Teclado + Mouse con 30% de descuento"
               loading="lazy"
             />
             <div class="promo-info">
@@ -238,10 +257,10 @@
           </div>
           <div class="carousel-controls">
             <button class="promo-prev" aria-label="Anterior">
-              <i class="fas fa-chevron-left"></i>
+              <i class="bi bi-chevron-left"></i>
             </button>
             <button class="promo-next" aria-label="Siguiente">
-              <i class="fas fa-chevron-right"></i>
+              <i class="bi bi-chevron-right"></i>
             </button>
           </div>
         </div>
@@ -270,17 +289,13 @@
         <div class="footer-social">
           <h3>Síguenos</h3>
           <div class="social-icons">
-            <a href="#" aria-label="Facebook"
-              ><i class="fab fa-facebook"></i
-            ></a>
-            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
             <a href="#" aria-label="Instagram"
-              ><i class="fab fa-instagram"></i
+              ><i class="bi bi-instagram"></i
             ></a>
-            <a href="#" aria-label="LinkedIn"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
           </div>
           <div class="newsletter">
             <h3>Suscríbete</h3>
@@ -300,6 +315,8 @@
       </div>
     </footer>
 
-    <script src="./js/script.js"></script>
+    <script src="./js/modules/carousel.js"></script>
+    <script src="./js/modules/cart.js"></script>
+    <script src="./js/script.js" type="module"></script>
   </body>
 </html>
